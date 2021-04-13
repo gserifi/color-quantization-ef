@@ -45,7 +45,7 @@ def k_means(k, points):
 
   return cluster, pointToCluster, iter
 
-with open("kolibri.jpg", "rb") as image_file:
+with open("cotton.png", "rb") as image_file:
   encoded_string = b64encode(image_file.read())
   pixels = decode(encoded_string)
   flat_pixels = np.reshape(pixels, (pixels.shape[0] * pixels.shape[1], 3))
